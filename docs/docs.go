@@ -542,9 +542,9 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "0.0",
-	Host:             "localhost:8080",
-	BasePath:         "/",
-	Schemes:          []string{},
+	Host:             "payme-cdsf.onrender.com",
+	BasePath:         "/api/v1",
+	Schemes:          []string{"https"},
 	Title:            "payme API",
 	Description:      "This is the backend API for codetest.",
 	InfoInstanceName: "swagger",

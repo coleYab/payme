@@ -1,4 +1,4 @@
-basePath: /
+basePath: /api/v1
 definitions:
   tasks.CreateSubmissionDto:
     properties:
@@ -86,7 +86,7 @@ definitions:
       string:
         type: string
     type: object
-host: localhost:8080
+host: payme-cdsf.onrender.com
 info:
   contact:
     email: support@myapp.com
@@ -350,4 +350,6 @@ paths:
       summary: Get private tasks
       tags:
       - tasks
+schemes:
+- https
 swagger: "2.0"

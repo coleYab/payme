@@ -25,8 +25,9 @@ import (
 //	@license.name	MIT
 //	@license.url	https://opensource.org/licenses/MIT
 
-// @host		localhost:8080
-// @BasePath	/
+// @host      payme-cdsf.onrender.com
+// @BasePath  /api/v1
+// @schemes   https
 func main() {
 	dbClient, err := database.ConnectDatabase(config.CFG.MONGO_URI)
 	if err != nil {
