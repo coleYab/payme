@@ -543,7 +543,7 @@ const docTemplate = `{
 var SwaggerInfo = &swag.Spec{
 	Version:          "0.0",
 	Host:             "payme-cdsf.onrender.com",
-	BasePath:         "/api/v1",
+	BasePath:         "/",
 	Schemes:          []string{"https"},
 	Title:            "payme API",
 	Description:      "This is the backend API for codetest.",
