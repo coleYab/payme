@@ -9,10 +9,9 @@ import (
 )
 
 func ConnectDatabase(uri string) (*mongo.Client, error) {
-	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10 * time.Second)
 	defer cancel()
 
-	// clientOpts := options.Client().ApplyURI("mongodb://localhost:27017/?connect=direct")
 	clientOpts := options.Client().ApplyURI(uri)
 	client, err := mongo.Connect(ctx, clientOpts)
 	if err != nil {
