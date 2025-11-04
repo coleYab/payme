@@ -3,4 +3,4 @@ run:
 	@go run main.go
 
 build:
-	@go build cmd
+	@go build -o payme main.go
